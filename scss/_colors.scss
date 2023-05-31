@@ -1,0 +1,10 @@
+$colors: (
+  v: hsl(257, 40%, 49%),
+  s-m: hsl(300, 69%, 71%),
+);
+
+:root {
+  @each $name, $val in $colors {
+    --clr-p-#{$name}: #{$val};
+  }
+}

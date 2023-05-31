@@ -1,0 +1,17 @@
+@use "scss/reset" as *;
+@use "scss/colors" as *;
+@use "scss/typography" as *;
+@use "scss/spacer" as *;
+
+body {
+  background-color: var(--clr-p-v);
+  color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: white;
+}
