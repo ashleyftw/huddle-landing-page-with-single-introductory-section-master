@@ -6,12 +6,77 @@
 body {
   background-color: var(--clr-p-v);
   color: white;
+  font-family: var(--ff-heading);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.mainImg {
+  width: 100%;
+  position: relative;
+  &__logo {
+    position: absolute;
+    margin: var(--mar-lg);
+    width: 8rem;
+  }
+  &__illustration {
+    position: absolute;
+    margin: 5.15rem auto;
+    padding: var(--pad-xl);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
 }
-.attribution a {
-  color: white;
+
+.mainText {
+  margin: var(--mar-lg) var(--mar-xxl);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bold);
+  }
+  p {
+    margin: var(--mar-md) 0;
+    font-size: 0.98rem;
+  }
+  button {
+    color: var(--clr-p-v);
+    font-size: 0.8rem;
+    padding: 0.65em 5em;
+    border-radius: 2rem;
+    border: 0;
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    display: grid;
+    place-self: center;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  &__icon {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-content: center;
+  }
+}
+
+footer {
+  margin-top: auto;
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: white;
+  }
 }

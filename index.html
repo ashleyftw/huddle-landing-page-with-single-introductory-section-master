@@ -24,22 +24,27 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <img src="images/logo.svg" alt="" />
-    <picture>
-      <source media="(min-width:375px)" srcset="images/bg-desktop.svg" />
-      <img src="images/bg-mobile.svg" alt="" />
-    </picture>
-    <img
-      src="images/illustration-mockups.svg"
-      alt="illustration mock of the app"
-    />
-    <h1>Build The Community Your Fans Will Love</h1>
-    <p>
-      Huddle re-imagines the way we build communities. You have a voice, but so
-      does your audience. Create connections with your users as you engage in
-      genuine discussion.
-    </p>
-    <button>Register</button>
+    <div class="mainImg">
+      <img class="mainImg__logo" src="images/logo.svg" alt="logo" />
+      <picture>
+        <source media="(min-width:375px)" srcset="images/bg-desktop.svg" />
+        <img src="images/bg-mobile.svg" alt="" />
+      </picture>
+      <img
+        class="mainImg__illustration"
+        src="images/illustration-mockups.svg"
+        alt="illustration mock of the app"
+      />
+    </div>
+    <article class="mainText">
+      <h1>Build The Community Your Fans Will Love</h1>
+      <p>
+        Huddle re-imagines the way we build communities. You have a voice, but
+        so does your audience. Create connections with your users as you engage
+        in genuine discussion.
+      </p>
+      <button>Register</button>
+    </article>
     <div class="social">
       <div class="social__icon">
         <i class="fa-brands fa-facebook-f" style="color: #ffffff"></i>
