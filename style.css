@@ -117,6 +117,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 700px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+}
 
 .mainImg {
   width: 100%;
@@ -136,13 +143,27 @@ body {
   width: 100%;
   height: auto;
 }
-
-.mainText {
-  margin: var(--mar-lg) var(--mar-xxl);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+@media (min-width: 700px) {
+  .mainImg {
+    width: 100%;
+    position: absolute;
+  }
+  .mainImg__logo {
+    position: absolute;
+    margin: 3rem 5rem;
+    width: 13rem;
+  }
+  .mainImg__illustration {
+    position: absolute;
+    margin: 8rem auto;
+    padding: 4rem;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: auto;
+  }
 }
+
 .mainText h1 {
   font-size: var(--fs-md);
   font-weight: var(--fw-bold);
@@ -161,6 +182,32 @@ body {
   display: grid;
   place-self: center;
 }
+@media (min-width: 700px) {
+  .mainText {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    margin: auto 4.5rem;
+  }
+  .mainText h1 {
+    font-size: 2.65rem;
+  }
+  .mainText p {
+    margin: var(--mar-base) 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  .mainText button {
+    font-size: 1.15rem;
+    padding: 0.7em 3.5em;
+    margin-right: auto;
+    margin-top: 0.5rem;
+  }
+}
 
 .social {
   display: flex;
@@ -175,6 +222,19 @@ body {
   display: grid;
   place-content: center;
 }
+@media (min-width: 700px) {
+  .social {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 6rem;
+    margin-bottom: 2rem;
+  }
+  .social__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 footer {
   margin-top: auto;
@@ -185,4 +245,10 @@ footer .attribution {
 }
 footer .attribution a {
   color: white;
+}
+@media (min-width: 700px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -10,6 +10,12 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 700px) {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
 }
 
 .mainImg {
@@ -29,13 +35,46 @@ body {
     width: 100%;
     height: auto;
   }
+
+  @media (min-width: 700px) {
+    width: 100%;
+    position: absolute;
+
+    &__logo {
+      position: absolute;
+      margin: 3rem 5rem;
+      width: 13rem;
+    }
+    &__illustration {
+      position: absolute;
+      margin: 8rem auto;
+      padding: 4rem;
+      top: 0;
+      left: 0;
+      width: 60%;
+      height: auto;
+    }
+  }
+}
+
+.text-social {
+  // @media (min-width: 700px) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: end;
+  //   position: absolute;
+  //   left: 55%;
+  //   top: 30%;
+  //   margin: auto 3rem;
+  // }
 }
 
 .mainText {
-  margin: var(--mar-lg) var(--mar-xxl);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  // margin: 0.5rem var(--mar-xxl);
+  // text-align: center;
+  // display: flex;
+  // flex-direction: column;
+
   h1 {
     font-size: var(--fs-md);
     font-weight: var(--fw-bold);
@@ -54,12 +93,39 @@ body {
     display: grid;
     place-self: center;
   }
+
+  @media (min-width: 700px) {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    margin: auto 4.5rem;
+
+    h1 {
+      font-size: 2.65rem;
+    }
+    p {
+      margin: var(--mar-base) 0;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+    button {
+      font-size: 1.15rem;
+      padding: 0.7em 3.5em;
+      margin-right: auto;
+      margin-top: 0.5rem;
+    }
+  }
 }
 
 .social {
   display: flex;
   justify-content: center;
   gap: 1rem;
+
   &__icon {
     border: 1px solid white;
     border-radius: 50%;
@@ -67,6 +133,19 @@ body {
     height: 30px;
     display: grid;
     place-content: center;
+  }
+
+  @media (min-width: 700px) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 6rem;
+    margin-bottom: 2rem;
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
@@ -78,5 +157,10 @@ footer {
   }
   .attribution a {
     color: white;
+  }
+
+  @media (min-width: 700px) {
+    position: absolute;
+    bottom: 0;
   }
 }
